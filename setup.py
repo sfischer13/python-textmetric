@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -13,15 +11,13 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [
-]
+requirements = []
 
-test_requirements = [
-]
+test_requirements = []
 
 setup(
     name='textmetric',
-    version='0.0.2',
+    version='0.1.0',
     description='Python implementations of common text metric algorithms.',
     long_description=readme + '\n\n' + history,
     author='Stefan Fischer',
@@ -57,5 +53,4 @@ setup(
         'Topic :: Text Processing :: Linguistic',
     ],
     test_suite='tests',
-    tests_require=test_requirements
-)
+    tests_require=test_requirements)
