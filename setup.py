@@ -52,4 +52,5 @@ setup(
         'Topic :: Text Processing :: Linguistic',
     ],
     test_suite='tests',
-    tests_require=test_requirements)
+    tests_require=test_requirements,
+    python_requires='>=3.3')
