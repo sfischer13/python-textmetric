@@ -16,22 +16,8 @@ requirements = []
 test_requirements = []
 
 setup(
-    name='textmetric',
-    version='0.1.0',
-    description='Python implementations of common text metric algorithms.',
-    long_description=readme + '\n\n' + history,
     author='Stefan Fischer',
     author_email='sfischer13@ymail.com',
-    url='https://github.com/sfischer13/python-textmetric',
-    packages=[
-        'textmetric',
-    ],
-    package_dir={'textmetric': 'textmetric'},
-    include_package_data=True,
-    install_requires=requirements,
-    license='MIT',
-    zip_safe=False,
-    keywords='text metric density readability TTR',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -51,6 +37,18 @@ setup(
         'Topic :: Text Processing',
         'Topic :: Text Processing :: Linguistic',
     ],
+    description='Python implementations of common text metric algorithms.',
+    include_package_data=True,
+    install_requires=requirements,
+    keywords='text metric density readability TTR',
+    license='MIT',
+    long_description=readme + '\n\n' + history,
+    name='textmetric',
+    package_dir={'textmetric': 'textmetric'},
+    packages=['textmetric'],
+    python_requires='>=3.3',
     test_suite='tests',
     tests_require=test_requirements,
-    python_requires='>=3.3')
+    url='https://github.com/sfischer13/python-textmetric',
+    version='0.1.0',
+    zip_safe=False)
